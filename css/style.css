@@ -1,31 +1,146 @@
+* {
+  margin: 10px 20px;
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
 body {
-    background-color: #000;
-    color: white;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+  margin-bottom: 0;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin-top: 5%;
+  
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar li {
+  list-style-type: none;
+  margin: 0 10px;
+}
+
+img.logo {
+  width: 100px;
+  height: auto;
+}
+
+figure .miranda {
+  width: 200px;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar li {
+  list-style-type: none;
+  margin: 0 10px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap: 20px;
+  margin-bottom: 0;
+}
+footer {
+  margin-top: auto; /* Push the footer to the bottom of the screen */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid columns */
+  gap: 20px;
+  justify-items: center;
+  text-align: center;
+  position: relative;
+}
+
+footer input[type="text"][placeholder="Message"] {
+  width: 100%;
+  padding: 10px; /* Adjust padding as needed */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+footer button {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #007bff; /* Example background color */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#footerheader {
+  position: absolute;
+  top: -40px; /* Adjust the value to position it above the footer */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color:;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+footer h3 {
+  margin: 5px 0; /* Adjust the margin as needed */
+}
+
+/* Adjust button styling as needed */
+
+
+/* Adjust grid1 and grid2 styles as needed */
+.grid1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Services {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: center;
+  align-items: center;
+}
+
+.Services h3 {
+  margin: 0 10px; /* Adjust spacing between items */
 }
 
 h1 {
-    text-align: center;
-    justify-content: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 3em;
+  text-align: center;
 }
 
-body h1.fade-in {
-    opacity: 0;
-    animation: fadeIn 3s ease-in forwards;
+button {
+  margin-top: 10px; /* Adjust spacing */
+  align-self: center;
+}
+
+.wrapper .grid2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (max-width: 767px) {
+  .wrapper {
+    grid-template-columns: 1fr; /* Display one column for smaller screens */
   }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-  
-    to {
-      opacity: 1;
-    }
+
+  .navbar ul {
+    margin-top: 10px; /* Adjust margin for the navbar */
+    margin-bottom: 20px; /* Adjust margin for the navbar */
   }
+
+  .navbar li {
+    margin: 0; /* Remove margin for the navbar items */
+  }
+}
